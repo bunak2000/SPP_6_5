@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body id="body" link="#000000" vlink="#000000" alink="#000000">
+    <div class="HeaderSpace">
+        <div class="Header">
+            <a href="/" class="Logo">
+                <span style="color: green;">B</span><span style="color: lightslategray;">drive</span>
+            </a>
+            <form method="POST" id="formAddFile" action="/AddFile" class="HeaderIcons" enctype="multipart/form-data">
+                <input type="text" name="NameOfFile" class="AddFileInput" required>
+                <button class="AddButton"></button>
+            </form>
+
+            <form method="POST" id="formUploadFile" action="/Upload" class="HeaderIcons" enctype="multipart/form-data">
+                <input type="file" id="fileToUpload" name="file" required class="FileInput" />
+                <button class="submit-button" type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="socket.io.js"></script>
+    <script src="index.js"></script> 
+
+    <div id="fileTable"></div>
+
+</body>
+
+</html>

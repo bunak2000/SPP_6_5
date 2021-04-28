@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Header {
+    width: 100%;
+    min-height: 30px;
+    position: absolute;
+    background-color: oldlace;
+    border: 2px groove lightgrey;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.HeaderSpace {
+    width: 100%;
+    margin: 0;
+    min-height: 55px;
+}
+
+.FileName {
+    height: 17px;
+    font-size: 10pt;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* word-break: break-all; */
+}
+
+.FilePanel {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.FileImage {
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto
+}
+
+.Logo {
+    font-family: sans-serif;
+    font-size: 25pt;
+    margin-right: 35px;
+}
+
+.HeaderIcons {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.AddFileInput {
+    border-radius: 5px;
+    width: 50px;
+    font-size: 8pt;
+}
+
+.FileInput {
+    width: 225px;
+}
+
+.AddButton {
+    height: 20px;
+    width: 20px;
+    background-image: url("images/addFolder.png");
+    background-repeat: no-repeat;
+}
+
+
+/* .DirField {
+    width: 100%;
+    min-height: 100;
+    float: left;
+} */
